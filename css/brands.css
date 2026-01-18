@@ -1,0 +1,95 @@
+/*
+* LittleLink Button Styles
+* https://littlelink.io
+* Free to use under the MIT license
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* Brand Button Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Only include brand-specific button styling here */
+.button,button {
+  color:var(--button-text,#000000);
+  background-color:var(--button-background,transparent);
+	border:var(--button-border,none);
+	transition:filter 0.2s ease,transform 0.2s ease;
+}
+
+/* Global Button Hover Effect
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button:hover,button:hover {
+	filter:brightness(90%);
+	transform:translateY(-1px);
+}
+
+/* Button Icons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.icon {
+	filter:var(--icon-filter,none);
+}
+
+/* Brand-Specific Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Adrelier */
+.button-adrelier {
+                       --button-text: #ffffff;
+                       --button-background: #a0774b;
+                       --button-border: 1px solid #FFFFFF;
+}
+
+/* Bluesky */
+.button-bluesky {
+    --button-text:#FFFFFF;
+    --button-background:#1185FE;
+    --button-border: 1px solid #FFFFFF;
+}
+
+/* Misskey */
+.button-misskey {
+    --button-text: #FFFFFF;
+    --button-background: #74b800;
+    --button-border: 1px solid #FFFFFF;
+}
+
+/* X */
+.button-x {
+    --button-text:#FFFFFF;
+    --button-background:#000000;
+    --button-border:1px solid #FFFFFF;
+}
+
+/* YouTube */
+.button-yt {
+    --button-text:#FFFFFF;
+    --button-background:#FF0000;
+    --button-border: 1px solid #FFFFFF;
+}
+
+/* niconico */
+.button-niconico {
+    --button-text: #FFFFFF;
+    --button-background: #202020;
+    --button-border: 1px solid #FFFFFF;
+}
+
+/* Discord */
+.button-discord {
+    --button-text:#FFFFFF;
+    --button-background:#5865F2;
+    --button-border: 1px solid #FFFFFF;
+}
+
+/* Kakaotalk */
+.button-kakaotalk {
+    --button-text: #FFFFFF;
+    --button-background: #bdaa00;
+    --button-border: 1px solid #FFFFFF;
+}
+
+/* Email */
+.button-email {
+    --button-text: #FFFFFF;
+    --button-background: #cd9213;
+    --button-border: 1px solid #FFFFFF;
+}
