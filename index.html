@@ -19,7 +19,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <style>
+ <style>
     :root {
       --lang-bg: #e0e0e0;
       --lang-text: #666;
@@ -76,20 +76,24 @@
       margin-top: 5px;
     }
 
-    /* Language Switcher */
+/* Language Switcher */
     .lang-switch-wrapper {
       display: flex;
       justify-content: center;
       margin-top: 20px;
       margin-bottom: 40px;
+      width: 100%;
     }
 
     .lang-switch {
       display: inline-flex;
+      flex-wrap: nowrap;
       align-items: center;
       justify-content: center;
       padding: 4px;
-      background: var(--lang-bg);
+      background: rgba(255, 255, 255, 0.25); 
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(4px);
       border-radius: 99px;
       line-height: 1;
     }
@@ -98,28 +102,28 @@
       background: transparent;
       border: none;
       cursor: pointer;
-      padding: 8px 16px;
-      font-size: 16px;
+      padding: 8px 12px; 
+      font-size: 13px;
       font-weight: 600;
-      color: var(--lang-text);
+      color: rgba(255, 255, 255, 0.9); 
       margin: 0;
       border-radius: 99px;
-      transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition: all 0.2s ease;
       -webkit-tap-highlight-color: transparent;
+      white-space: nowrap;
     }
 
     .lang-switch button:hover {
-      color: var(--lang-active-text);
-      opacity: 0.8;
+      background: rgba(255, 255, 255, 0.2);
     }
 
     .lang-switch button.active {
-      background: var(--lang-active-bg);
-      color: var(--lang-active-text);
-      box-shadow: var(--lang-shadow);
+      background: #FFFFFF;
+      color: #BA814E;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-weight: 700;
     }
 
-    /* Language Visibility Utilities */
     :lang(en) .hide-on-en { display: none; }
     :lang(ko) .hide-on-ko { display: none; }
     :lang(jp) .hide-on-jp { display: none; }

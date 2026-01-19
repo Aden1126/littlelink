@@ -30,57 +30,53 @@
             --lang-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
         }
 
-        @media (prefers-color-scheme: dark) {
-            .theme-auto {
-                --lang-bg: rgba(255, 255, 255, 0.1);
-                --lang-text: #aaa;
-                --lang-active-bg: #333;
-                --lang-active-text: #fff;
-                --lang-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-            }
-        }
+/* Language Switcher */
+    .lang-switch-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      width: 100%;
+    }
 
-        /* Language Switcher */
-        .lang-switch-wrapper {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-            margin-top: 20px;
-        }
+    .lang-switch {
+      display: inline-flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      background: rgba(255, 255, 255, 0.25); 
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(4px);
+      border-radius: 99px;
+      line-height: 1;
+    }
 
-        .lang-switch {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2px;
-            background: var(--lang-bg);
-            border-radius: 99px;
-            line-height: 1;
-        }
+    .lang-switch button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 8px 12px; 
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9); 
+      margin: 0;
+      border-radius: 99px;
+      transition: all 0.2s ease;
+      -webkit-tap-highlight-color: transparent;
+      white-space: nowrap;
+    }
 
-        .lang-switch button {
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            padding: 5px 12px;
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--lang-text);
-            margin: 0;
-            border-radius: 99px;
-            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
+    .lang-switch button:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
 
-        .lang-switch button:hover {
-            color: var(--lang-active-text);
-            opacity: 0.8;
-        }
-
-        .lang-switch button.active {
-            background: var(--lang-active-bg);
-            color: var(--lang-active-text);
-            box-shadow: var(--lang-shadow);
-        }
+    .lang-switch button.active {
+      background: #FFFFFF;
+      color: #BA814E;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      font-weight: 700;
+    }
 
         /* Privacy Page Specific Layout */
         .privacy-content {
@@ -95,7 +91,6 @@
             margin-top: 30px;
             margin-bottom: 15px;
             font-size: 1.25rem;
-            border-bottom: 1px solid rgba(128, 128, 128, 0.2);
             padding-bottom: 5px;
         }
 

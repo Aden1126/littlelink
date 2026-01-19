@@ -16,7 +16,7 @@
 
 /* Variables (CSS Custom Properties) */
 :root {
-    /* Typography Scale (1.25 modular scale) */
+    /* Typography Scale */
     font-size: 16px; 
     --scale-0: 1rem;       /* 16px */
     --scale-1: 1.25rem;    /* 20px */
@@ -45,6 +45,10 @@ body {
     font-size: var(--scale-1);
     font-weight: 400;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* Typography */
@@ -72,7 +76,7 @@ h3 {
 }
 
 p {
-    margin: 0 0 2rem 0; /* Default spacing */
+    margin: 0 0 2rem 0; 
 }
 
 .container p {
@@ -84,10 +88,10 @@ p {
 /* Layout & Grid */
 .container {
     position: relative;
-    width: 100%;
+    width: 90%; 
     max-width: 37.5rem;
     margin: 0 auto;
-    padding: var(--spacing-xl) var(--spacing-m) 0 var(--spacing-m);
+    padding: var(--spacing-xl) 0 0 0;
     box-sizing: border-box;
     text-align: center;
 }
@@ -122,7 +126,7 @@ footer {
 
 /* Avatar */
 .avatar {
-    width: 8rem; /* 128px */
+    width: 8rem;
     height: 8rem;
     object-fit: cover;
     background-position: center;
@@ -131,7 +135,6 @@ footer {
     margin-right: auto;
     display: block;
 }
-/* Avatar Modifiers */
 .avatar--none { border-radius: 0%; }
 .avatar--rounded { border-radius: 50%; }
 .avatar--soft { border-radius: 0.5rem; }
@@ -142,8 +145,9 @@ footer {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 18.75rem; /* 300px */
-    min-height: 3rem; /* 48px */
+    width: 100%;
+    max-width: 18.75rem;
+    min-height: 3rem; 
     padding: 0.75rem 1rem;
     font-size: 1.125rem;
     font-weight: 500;
@@ -182,25 +186,24 @@ a:hover { color: #083BDA; }
 /* For devices larger than 400px */
 @media (min-width: 25rem) { 
     .container {
-        width: 85%;
-        padding-left: 0;
-        padding-right: 0;
+        width: 90%;
+        max-width: 37.5rem;
     }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 34.375rem) {
-    .container { width: 80%; }
+    .container { width: 100%; }
 }
 
 /* For devices smaller than 550px (Mobile) */
 @media (max-width: 34.375rem) {
-    h1 { font-size: var(--scale-4); } /* ~39px */
+    h1 { font-size: var(--scale-4); } 
     h2 { font-size: var(--scale-2); }
     h3 { font-size: var(--scale-1); }
     
     body, .container p { 
-        font-size: var(--scale-0); /* 16px */
+        font-size: var(--scale-0); 
     }
     
     .avatar { margin-bottom: var(--spacing-m); }
