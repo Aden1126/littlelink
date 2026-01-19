@@ -1,595 +1,227 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html class="theme-light" lang="en">
-=======
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aden1126</title>
+  <meta name="description" content="List of Links for Aden1126">
+  <meta name="keywords" content="Aden1126">
+  <meta name="author" content="Aden1126">
+  <link rel="canonical" href="https://aden1126.vercel.app/">
+  <link rel="icon" type="image/x-icon" href="/images/avatar.png">
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/brands.css">
 
-<!--
-  To change the theme, change the class on the html tag below to one of:
-  - theme-auto: Automatically switches based on user's system preferences
-  - theme-light: Forces light theme
-  - theme-dark: Forces dark theme
--->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-<html class="theme-auto" lang="en"> <!-- Update`class="theme-auto" with your preference -->
->>>>>>> 6fb6d6eed2efbef9b23193691dca57ce02840f48
+  <style>
+    :root {
+      --lang-bg: #e0e0e0;
+      --lang-text: #666;
+      --lang-active-bg: #ffffff;
+      --lang-active-text: #000;
+      --lang-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<<<<<<< HEAD
-    <title>LittleLink</title>
-    <link rel="icon" type="image/x-icon" href="/images/avatar.png">
-    <meta name="description" content="List of Links for Aden1126">
-    <meta name="keywords" content="Aden1126, Graphic Design, Vocal Synth">
-    <meta rel="canonical" href="https://aden1126.vercel.app/">
-    <meta name="author" content="Aden1126">
-
-=======
-    <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
-    <title>LittleLink</title>
-    <link rel="icon" type="image/x-icon" href="/images/avatar.png"> <!-- Update this with your own favicon -->
-
-    <!-- Meta Description - Write a description (150-160 characters recommended) -->
-    <meta name="description" content="Replace this with your own, this appears in search results and when sharing.">
-
-    <!-- Keywords -->
-    <meta name="keywords" content="your name, industry, and specialties">
-
-    <!-- Canonical URL - Helps prevent duplicate content issues -->
-    <meta rel="canonical" href="https://yourwebsite.com">
-
-    <!-- Author Information -->
-    <meta name="author" content="Your Name">
-
-    <!-- Stylesheets -->
->>>>>>> 6fb6d6eed2efbef9b23193691dca57ce02840f48
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/brands.css">
-
-<<<<<<< HEAD
-    <style>
-      :root {
-        --lang-bg: #e0e0e0; 
-        --lang-text: #666;
-        --lang-active-bg: #ffffff;
-        --lang-active-text: #000;
-        --lang-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    @media (prefers-color-scheme: dark) {
+      .theme-auto {
+        --lang-bg: rgba(255, 255, 255, 0.1);
+        --lang-text: #aaa;
+        --lang-active-bg: #333;
+        --lang-active-text: #fff;
+        --lang-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
       }
+    }
 
-      .lang-switch-wrapper {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px; 
-        margin-top: 20px;
-      }
+    /* Layout & Typography */
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
 
-      .lang-switch {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        
-        padding: 2px;
-        background: var(--lang-bg);
-        border-radius: 99px;
-        line-height: 1;
-      }
+    p[data-i18n="pageDesc"] {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
 
-      .lang-switch button {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 5px 12px;
-        font-size: 14px;
-        font-weight: 600;
-        color: var(--lang-text);
-        margin: 0; 
-        
-        border-radius: 99px;
-        transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        -webkit-tap-highlight-color: transparent;
-      }
+    .section-group {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 30px;
+    }
 
-      .lang-switch button:hover {
-        color: var(--lang-active-text);
-        opacity: 0.8;
-      }
+    .button-label {
+      font-size: 1.5rem;
+      color: #FFFFFF;
+      line-height: 1.1;
+      margin-top: 20px;
+      margin-bottom: 8px !important;
+    }
 
-      .lang-switch button.active {
-        background: var(--lang-active-bg);
-        color: var(--lang-active-text);
-        box-shadow: var(--lang-shadow);
-      }
+    .section-group:first-of-type .button-label {
+      margin-top: 0;
+    }
 
-      .section-group {
-        margin-bottom: 10px; 
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-      }
+    .button {
+      font-size: 1.15rem;
+      margin-top: 5px;
+    }
 
-      :lang(en) .hide-on-en { display: none !important; }
-      :lang(ko) .hide-on-ko { display: none !important; }
-      :lang(jp) .hide-on-jp { display: none !important; }
-    </style>
-=======
-    <!-- LittleLink Extended Stylesheet (Optional) -->
-    <!-- <link rel="stylesheet" href="css/brands-extended.css"> -->
-    <!-- Learn more at https://github.com/sethcottle/littlelink-extended.
-         Remove comments if you've added LittleLink Extended dependencies -->
+    /* Language Switcher */
+    .lang-switch-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
 
->>>>>>> 6fb6d6eed2efbef9b23193691dca57ce02840f48
-  </head>
+    .lang-switch {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      background: var(--lang-bg);
+      border-radius: 99px;
+      line-height: 1;
+    }
+
+    .lang-switch button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 8px 16px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--lang-text);
+      margin: 0;
+      border-radius: 99px;
+      transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .lang-switch button:hover {
+      color: var(--lang-active-text);
+      opacity: 0.8;
+    }
+
+    .lang-switch button.active {
+      background: var(--lang-active-bg);
+      color: var(--lang-active-text);
+      box-shadow: var(--lang-shadow);
+    }
+
+    /* Language Visibility Utilities */
+    :lang(en) .hide-on-en { display: none; }
+    :lang(ko) .hide-on-ko { display: none; }
+    :lang(jp) .hide-on-jp { display: none; }
+  </style>
+</head>
 
 <body>
-
-    <div class="container">
-        <div class="column">
-<<<<<<< HEAD
-            <div class="lang-switch-wrapper">
-              <div class="lang-switch" role="group" aria-label="Language switcher">
-                <button onclick="changeLanguage('ko')" id="btn-ko" aria-label="Korean">한국어</button>
-                <button onclick="changeLanguage('jp')" id="btn-jp" aria-label="Japanese">日本語</button>
-                <button onclick="changeLanguage('en')" id="btn-en" aria-label="English">English</button>
-              </div>
-            </div>
-
-            <img class="avatar avatar--rounded" src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="Aden1126">
-
-            <h1>
-              <div data-i18n="pageTitle">Aden1126</div>
-            </h1>
-
-            <p data-i18n="pageDesc">“Simply, the perfect crisp.”</p>
-
-            <div class="button-stack" role="navigation">
-
-              <div class="section-group">
-                  <p class="button-label" data-i18n="labelAdrelier">Personal Website</p>
-
-                  <a class="button button-adrelier" href="https://adrelier.super.site/" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/adrelier.svg" alt="Adrelier Logo">
-                    <span data-i18n="btnAdrelier">Adrelier</span>
-                  </a>
-               </div>
-
-                <div class="section-group">
-                  <p class="button-label" data-i18n="labelPromoSNS">Social Media for Promo</p>
-
-                  <a class="button button-x" href="https://x.com/Aden1126" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/x.svg" alt="X Logo">
-                    <span data-i18n="btnX">X (formerly Twitter)</span>
-                  </a>
-
-                  <a class="button button-bluesky" href="https://bsky.app/profile/aden1126.bsky.social" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/bluesky.svg" alt="Bluesky Logo">
-                    <span data-i18n="btnBluesky-work">Bluesky</span>
-                  </a>
-              </div>
-
-              <div class="section-group hide-on-en">
-                  <p class="button-label" data-i18n="labelChat">Social Media for Chat</p>
-                  
-                  <a class="button button-misskey hide-on-jp" href="https://stella.place/@A_den1126" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/misskey.svg" alt="Misskey Logo">
-                    <span data-i18n="btnMisskey-kr">Misskey (KR)</span>
-                  </a>
-
-                  <a class="button button-bluesky hide-on-jp" href="https://bsky.app/profile/a-den1126.stella.place.ap.brid.gy" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/bluesky.svg" alt="Bluesky Logo">
-                    <span data-i18n="btnBluesky-mirror">Bluesky (Mirror)</span>
-                  </a>
-
-                  <a class="button button-misskey hide-on-ko" href="https://voskey.icalo.net/@a_den1126" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/misskey.svg" alt="Misskey Logo">
-                    <span data-i18n="btnMisskey-jp">Misskey (JP)</span>
-                  </a>
-              </div>
-
-              <div class="section-group">
-                  <p class="button-label" data-i18n="labelVideo">Channels</p>
-
-                  <a class="button button-yt" href="https://youtube.com/@aden1126" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/youtube.svg" alt="YouTube Logo">
-                    <span data-i18n="btnYoutube">Youtube</span>
-                  </a>
-
-                  <a class="button button-niconico" href="https://www.nicovideo.jp/user/127196706" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/niconico.svg" alt="Niconico Logo">
-                    <span data-i18n="btnNico">Niconico</span>
-                  </a>
-              </div>
-              
-              <div class="section-group">
-
-                  <p class="button-label" data-i18n="labelContact">Contact</p>
-
-                  <a class="button button-discord" href="https://discord.com/users/389731947892572161" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/discord.svg" alt="Discord Logo">
-                    <span data-i18n="btnDiscord">Discord</span>
-                  </a>
-                  
-                  <a class="button button-kakaotalk hide-on-jp hide-on-en" href="https://open.kakao.com/o/sJAidqbi" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/kakaotalk.svg" alt="Kakaotalk Logo">
-                    <span data-i18n="btnKakaotalk">Kakaotalk</span>
-                  </a>
-
-                  <a class="button button-email" href="mailto:aden1126@hanmail.net" target="_blank" rel="noopener" role="button">
-                    <img class="icon" aria-hidden="true" src="images/icons/email.svg" alt="Email Logo">
-                    <span data-i18n="btnEmail">aden1126@hanmail.net</span>
-                  </a>
-               </div>
-
-      <footer>
-        <span data-i18n="footerPrivacy"><a href="privacy.html">Privacy Policy</a></span>
-=======
-
-            <!--
-              By default, the Avatar is rounded. Use the following:
-              - avatar--rounded: Automatically rounds the image
-              - avatar--soft: Slightly rounds the image
-              - avatar--none: Removes any rounding
-
-              Be sure to replace the src with your own image path and update the alt text
-            -->
-            <img class="avatar avatar--rounded" src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="LittleLink">
-
-            <!-- Replace with your name or brand -->
-            <h1>
-              <div>LittleLink</div>
-            </h1>
-
-            <!-- Add a short description about yourself or your brand -->
-            <p>An open source DIY Linktree alternative.</p>
-
-            <!-- All your buttons go here -->
-            <div class="button-stack" role="navigation">
-
-              <!-- Default LittleLink -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/littlelink.svg" alt="LittleLink Logo">LittleLink</a>
-
-              <!-- Amazon -->
-              <a class="button button-amazon" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/amazon.svg" alt="Amazon Wishlist Logo">Amazon Wishlist</a>
-
-              <!-- Amazon Music -->
-              <a class="button button-amazon-music" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/amazon-music.svg" alt="Amazon Music Logo">Listen on Amazon Music</a>
-
-              <!-- Apple App Store -->
-              <a class="button button-appstore" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple.svg" alt="Apple Logo">Apple App Store</a>
-
-              <!-- Apple Invites -->
-              <a class="button button-invites" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple-invites.svg" alt="Apple Invites Logo">Apple Invites</a>
-
-              <!-- Apple Music -->
-              <a class="button button-apple-music" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple-music.svg" alt="Apple Music Logo">Listen on Apple Music</a>
-
-              <!-- Apple Music Alternate -->
-              <a class="button button-apple-music-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple-music-alt.svg" alt="Apple Music Logo">Listen on Apple Music</a>
-
-              <!-- Apple Podcasts -->
-              <a class="button button-apple-podcasts" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple-podcasts.svg" alt="Apple Podcasts Logo">Listen on Apple Podcasts</a>
-
-              <!-- Apple Podcasts Alternate -->
-              <a class="button button-apple-podcasts-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/apple-podcasts-alt.svg" alt="Apple Podcasts Logo">Listen on Apple Podcasts</a>
-
-              <!-- Bandcamp -->
-              <a class="button button-bandcamp" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/bandcamp.svg" alt="Bandcamp Logo">Bandcamp</a>
-
-              <!-- Behance -->
-              <a class="button button-behance" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/behance.svg" alt="Behance Logo">Behance</a>
-
-              <!-- Bluesky -->
-              <a class="button button-bluesky" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/bluesky.svg" alt="Bluesky Logo">Bluesky</a>
-
-              <!-- Bluesky Alt -->
-              <a class="button button-bluesky-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/bluesky-alt.svg" alt="Bluesky Logo">Bluesky</a>
-
-              <!-- Buy Me A Coffee -->
-              <a class="button button-coffee" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/buy-me-a-coffee.svg" alt="Buy Me A Coffee Logo">Buy Me A Coffee</a>
-
-              <!-- Cal.com -->
-              <a class="button button-cal" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/cal.svg" alt="Cal.com Logo">Schedule with Cal.com</a>
-
-              <!-- Calendly -->
-              <a class="button button-calendly" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/calendly.svg" alt="Calendly Logo">Schedule with Calendly</a>
-
-              <!-- Cash App -->
-              <a class="button button-cash-app" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/cash-app-dollar.svg" alt="Cash App Logo">Cash App</a>
-
-              <!-- Dev.to -->
-              <a class="button button-dev-to" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/dev-to.svg" alt="Dev.to Logo">Dev.to</a>
-
-              <!-- Discogs -->
-              <a class="button button-discogs" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/discogs.svg" alt="Discogs Logo">Discogs</a>
-
-              <!-- Discogs Alt -->
-              <a class="button button-discogs-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/discogs-alt.svg" alt="Discogs Logo">Discogs</a>
-
-              <!-- Discord -->
-              <a class="button button-discord" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/discord.svg" alt="Discord Logo">Discord</a>
-
-              <!-- Dribbble -->
-              <a class="button button-dribbble" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/dribbble.svg" alt="Dribbble Logo">Dribbble</a>
-
-              <!-- Etsy -->
-              <a class="button button-etsy" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/etsy.svg" alt="Etsy Logo">Shop on Etsy</a>
-
-              <!-- Facebook -->
-              <a class="button button-faceb" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/facebook.svg" alt="Facebook Logo">Find us on Facebook</a>
-
-              <!-- Facebook Messenger -->
-              <a class="button button-messenger" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/messenger.svg" alt="Messenger Logo">Chat on Messenger</a>
-
-              <!-- Figma -->
-              <a class="button button-figma" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/figma.svg" alt="Figma Logo">Figma Community</a>
-
-              <!-- Fiverr -->
-              <a class="button button-fiverr" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/fiverr.svg" alt="Fiverr Logo">Fiverr Gig</a>
-
-              <!-- Flickr -->
-              <a class="button button-flickr" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/flickr.svg" alt="Flickr Logo">Flickr</a>
-
-              <!-- GitHub -->
-              <a class="button button-github" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/github.svg" alt="GitHub Logo">GitHub</a>
-
-              <!-- GitLab -->
-              <a class="button button-gitlab" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/gitlab.svg" alt="GitLab Logo">GitLab</a>
-
-              <!-- GoFundMe -->
-              <a class="button button-gofundme" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/gofundme.svg" alt="GoFundMe Logo">GoFundMe</a>
-
-              <!-- Goodreads -->
-              <a class="button button-goodreads" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/goodreads.svg" alt="Goodreads Logo">Goodreads</a>
-
-              <!-- Google Drive -->
-              <a class="button button-google-black" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/google-drive.svg" alt="Google Drive Logo">View in Google Drive</a>
-
-              <!-- Google Play Store -->
-              <a class="button button-playstore" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/google-play.svg" alt="Google Play Store Logo">Google Play Store</a>
-
-              <!-- Google Scholar -->
-              <a class="button button-google-scholar" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/google-scholar.svg" alt="Google Scholar Logo">Google Scholar</a>
-
-              <!-- Hashnode -->
-              <a class="button button-hashnode" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/hashnode.svg" alt="Hashnode Logo">Hashnode</a>
-
-              <!-- Instagram -->
-              <a class="button button-instagram" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
-
-              <!-- Kick -->
-              <a class="button button-kick" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/kick.svg" alt="Kick Logo">Kick</a>
-
-              <!-- Kick Alt -->
-              <a class="button button-kick-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/kick-alt.svg" alt="Kick Logo">Kick</a>
-
-              <!-- Kickstarter -->
-              <a class="button button-kickstarter" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/kickstarter.svg" alt="Kickstarter Logo">Kickstarter</a>
-
-              <!-- Kit -->
-              <a class="button button-kit" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/kit.svg" alt="Kit Logo">Kit</a>
-
-              <!-- Ko-fi -->
-              <a class="button button-ko-fi" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/ko-fi.svg" alt="Ko-fi Logo">Support me on Ko-fi</a>
-
-              <!-- Last.fm -->
-              <a class="button button-last-fm" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/last-fm.svg" alt="">Last.fm</a>
-
-              <!-- Letterboxd -->
-              <a class="button button-letterboxd" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/letterboxd.svg" alt="">Letterboxd</a>
-
-              <!-- Line -->
-              <a class="button button-line" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/line.svg" alt="Line Logo">Line</a>
-
-              <!-- LinkedIn -->
-              <a class="button button-linked" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/linkedin.svg" alt="LinkedIn Logo">LinkedIn</a>
-
-              <!-- Mailchimp -->
-              <a class="button button-mailchimp" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/mailchimp.svg" alt="Mailchimp Logo">Mailchimp</a>
-
-              <!-- Mastodon -->
-              <a class="button button-mastodon" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/mastodon.svg" alt="Mastodon Logo">Mastodon</a>
-
-              <!-- Matrix -->
-              <a class="button button-matrix" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/matrix.svg" alt="Matrix Logo">Matrix</a>
-
-              <!-- Medium -->
-              <a class="button button-medium" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/medium.svg" alt="Medium Logo">Medium</a>
-
-              <!-- Meetup -->
-              <a class="button button-meetup" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/meetup.svg" alt="Meetup Logo">Meetup</a>
-
-              <!-- Meetup Alt -->
-              <a class="button button-meetup-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/meetup-alt.svg" alt="Meetup Logo">Meetup</a>
-
-              <!-- Microsoft Store -->
-              <a class="button button-microsoft" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/microsoft.svg" alt="Microsoft Logo">Get it from Microsoft</a>
-
-              <!-- Notion -->
-              <a class="button button-notion" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/notion.svg" alt="Notion Logo">Notion</a>
-
-              <!-- Obsidian -->
-              <a class="button button-obsidian" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/obsidian.svg" alt="Obsidian Logo">Obsidian</a>
-
-              <!-- OnlyFans -->
-              <a class="button button-onlyfans" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/onlyfans.svg" alt="OnlyFans Logo">OnlyFans (18+)</a>
-
-              <!-- Patreon -->
-              <a class="button button-patreon" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/patreon.svg" alt="Patreon Logo">Patreon</a>
-
-              <!-- PayPal -->
-              <a class="button button-paypal" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/paypal.svg" alt="PayPal Logo">PayPal</a>
-
-              <!-- Pinterest -->
-              <a class="button button-pinterest" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/pinterest.svg" alt="Pinterest Logo">Pinterest</a>
-
-              <!-- Product Hunt -->
-              <a class="button button-product-hunt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/product-hunt.svg" alt="Product Hunt Logo">Product Hunt</a>
-
-              <!-- Reddit -->
-              <a class="button button-reddit" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/reddit.svg" alt="Reddit Logo">Reddit</a>
-
-              <!-- Shop -->
-              <a class="button button-shop" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/shop.svg" alt="Shop Logo">Buy with Shop</a>
-
-              <!-- Signal -->
-              <a class="button button-signal" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/signal.svg" alt="Signal Logo">Signal</a>
-
-              <!-- Signal Alt -->
-              <a class="button button-signal-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/signal-alt.svg" alt="Signal Logo">Signal</a>
-
-              <!-- Slack -->
-              <a class="button button-slack" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/slack.svg" alt="Slack Logo">Join Slack</a>
-
-              <!-- Snapchat -->
-              <a class="button button-snapchat" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/snapchat.svg" alt="Snapchat Logo">Snapchat</a>
-
-              <!-- SoundCloud -->
-              <a class="button button-soundcloud" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/soundcloud.svg" alt="SoundCloud Logo">SoundCloud</a>
-
-              <!-- Spotify -->
-              <a class="button button-spotify" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/spotify.svg" alt="Spotify Logo">Listen on Spotify</a>
-
-              <!-- Spotify Alt -->
-              <a class="button button-spotify-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/spotify-alt.svg" alt="Spotify Logo">Listen on Spotify</a>
-
-              <!-- Square -->
-              <a class="button button-square" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/square.svg" alt="Square Logo">Buy with Square</a>
-
-              <!-- Stack Overflow -->
-              <a class="button button-stack-overflow" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/stack-overflow.svg" alt="Stack Overflow Logo">Stack Overflow</a>
-
-              <!-- Steam -->
-              <a class="button button-steam" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/steam.svg" alt="Steam Logo">Steam</a>
-
-              <!-- Steam Alt -->
-              <a class="button button-steam-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/steam.svg" alt="Steam Logo">Steam</a>
-
-              <!-- Strava -->
-              <a class="button button-strava" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/strava.svg" alt="Strava Logo">Strava</a>
-
-              <!-- Substack -->
-              <a class="button button-substack" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/substack.svg" alt="Substack Logo">Substack</a>
-
-              <!-- Telegram -->
-              <a class="button button-telegram" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/telegram.svg" alt="Telegram Logo">Telegram</a>
-
-              <!-- Threads -->
-              <a class="button button-threads" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/threads.svg" alt="Threads Logo">Threads</a>
-
-              <!-- Threema -->
-              <a class="button button-threema" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/threema.svg" alt="Threema Logo">Threema</a>
-
-              <!-- TikTok -->
-              <a class="button button-tiktok" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/tiktok.svg" alt="TikTok Logo">TikTok</a>
-
-              <!-- Trello -->
-              <a class="button button-trello" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/trello.svg" alt="Trello Logo">Trello</a>
-
-              <!-- Tumblr -->
-              <a class="button button-tumb" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/tumblr.svg" alt="Tumblr Logo">Tumblr</a>
-
-              <!-- Twitch -->
-              <a class="button button-twitch" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/twitch.svg" alt="Twitch Logo">Twitch</a>
-
-              <!-- Unsplash -->
-              <a class="button button-unsplash" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/unsplash.svg" alt="Unsplash Logo">Unsplash</a>
-
-              <!-- Venmo -->
-              <a class="button button-venmo" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/venmo.svg" alt="Venmo Logo">Venmo</a>
-
-              <!-- Vimeo -->
-              <a class="button button-vimeo" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/vimeo.svg" alt="Vimeo Logo">Vimeo</a>
-
-              <!-- VSCO -->
-              <a class="button button-vsco" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/vsco.svg" alt="VSCO Logo">VSCO</a>
-
-              <!-- WhatsApp -->
-              <a class="button button-whatsapp" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/whatsapp.svg" alt="WhatsApp Logo">WhatsApp</a>
-
-              <!-- WordPress -->
-              <a class="button button-wordpress" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/wordpress.svg" alt="WordPress Logo">WordPress</a>
-
-              <!-- X -->
-              <a class="button button-x" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/x.svg" alt="X Logo">Follow on X</a>
-
-              <!-- YouTube -->
-              <a class="button button-yt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/youtube.svg" alt="YouTube Logo">YouTube</a>
-
-              <!-- YouTube Alt -->
-              <a class="button button-yt-alt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/youtube-alt.svg" alt="YouTube Logo">YouTube</a>
-
-              <!-- YouTube Music -->
-              <a class="button button-yt" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/youtube-music.svg" alt="YouTube Music Logo">Listen on YouTube Music</a>
-
-              <!-- Zoom -->
-              <a class="button button-zoom" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/zoom.svg" alt="Zoom Logo">Join Zoom Webinar</a>
-
-              <!-- Generic Blog -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-blog.svg" alt="Blog Icon">Read our blog</a>
-
-              <!-- Generic Calendar -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-calendar.svg" alt="Calendar Icon">Event RSVP</a>
-
-              <!-- Generic Cloud -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-cloud.svg" alt="Cloud Icon">Download File</a>
-
-              <!-- Generic Code -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-code.svg" alt="Code Icon">View the code</a>
-
-              <!-- Generic Computer -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-computer.svg" alt="Computer Icon">Homelab Setup</a>
-
-              <!-- Generic Email -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Email Us</a>
-
-              <!-- Generic Email Alt -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-email-alt.svg" alt="Email Icon">Email Us</a>
-
-              <!-- Generic Homepage -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-homepage.svg" alt="Homepage Icon">Visit Homepage</a>
-
-              <!-- Generic Map -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-map.svg" alt="Map Icon">Get Directions</a>
-
-              <!-- Generic Phone -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-phone.svg" alt="Phone Icon">Call Us</a>
-
-              <!-- Generic Review -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-review.svg" alt="Review Icon">Leave us a review</a>
-
-              <!-- Generic RSS -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-rss.svg" alt="RSS Icon">RSS Subscribe</a>
-
-              <!-- Generic Shopping Bag -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-shopping-bag.svg" alt="Shopping Bag Icon">Visit Our Shop</a>
-
-              <!-- Generic Shopping Tag -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-shopping-tag.svg" alt="Shopping Tag Icon">10% Discount</a>
-
-              <!-- Generic SMS -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-sms.svg" alt="SMS Icon">Send us a message</a>
-
-              <!-- Generic Website -->
-              <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/generic-website.svg" alt="Website Icon">Visit Website</a>
-
-              <!-- LittleLink Extended -->
-              <a class="button button-default" href="https://github.com/sethcottle/littlelink-extended" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/littlelink.svg" alt="LittleLink Logo">LittleLink Extended</a>
+  <div class="container">
+    <div class="column">
+      
+      <div class="lang-switch-wrapper">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button onclick="changeLanguage('ko')" id="btn-ko" aria-label="Korean">한국어</button>
+          <button onclick="changeLanguage('jp')" id="btn-jp" aria-label="Japanese">日本語</button>
+          <button onclick="changeLanguage('en')" id="btn-en" aria-label="English">English</button>
+        </div>
+      </div>
+
+      <img class="avatar avatar--rounded" src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="Aden1126">
+      <h1>
+        <div data-i18n="pageTitle">Aden1126</div>
+      </h1>
+      <p data-i18n="pageDesc">“Simply, the perfect crisp.”</p>
+
+      <div class="button-stack" role="navigation">
+
+        <div class="section-group">
+          <p class="button-label" data-i18n="labelAdrelier">Personal Website</p>
+          <a class="button button-adrelier" href="https://adrelier.super.site/" target="_blank" rel="noopener" role="button">
+            <img class="icon" aria-hidden="true" src="images/icons/adrelier.svg" alt="Adrelier Logo">
+            <span data-i18n="btnAdrelier">Adrelier</span>
+          </a>
+        </div>
+
+        <div class="section-group">
+          <p class="button-label" data-i18n="labelPromoSNS">Social Media for Promo</p>
+          <a class="button button-x" href="https://x.com/Aden1126" target="_blank" rel="noopener" role="button">
+            <img class="icon" aria-hidden="true" src="images/icons/x.svg" alt="X Logo">
+            <span data-i18n="btnX">X (formerly Twitter)</span>
+          </a>
+          <a class="button button-bluesky" href="https://bsky.app/profile/aden1126.bsky.social" target="_blank" rel="noopener" role="button">
+            <img class="icon" aria-hidden="true" src="images/icons/bluesky.svg" alt="Bluesky Logo">
+            <span data-i18n="btnBluesky-work">Bluesky</span>
+          </a>
+        </div>
+
+        <div class="section-group hide-on-en">
+          <p class="button-label" data-i18n="labelChat">Social Media for Chat</p>
+          
+          <a class="button button-misskey hide-on-jp" href="https://stella.place/@A_den1126" target="_blank" rel="noopener" role="button">
+            <img class="icon" aria-hidden="true" src="images/icons/misskey.svg" alt="Misskey Logo">
+            <span data-i18n="btnMisskey-kr">Misskey (KR)</span>
+          </a>
+
+          <a class="button button-bluesky hide-on-jp" href="https://bsky.app/profile/a-den1126.stella.place.ap.brid.gy" target="_blank" rel="noopener" role="button">
+            <img class="icon" aria-hidden="true" src="images/icons/bluesky.svg" alt="Bluesky Logo">
+            <span data-i18n="btnBluesky-mirror">Bluesky (Mirror)</span>
+          </a>
+
+          <a class="button button-misskey hide-on-ko" href="https://voskey.icalo.net/@a_den1126" target="_blank" rel="noopener" role="button">
+            <img class="icon" aria-hidden="true" src="images/icons/misskey.svg" alt="Misskey Logo">
+            <span data-i18n="btnMisskey-jp">Misskey (JP)</span>
+          </a>
+        </div>
+
+        <div class="section-group">
+          <p class="button-label" data-i18n="labelVideo">Channels</p>
+          <a class="button button-yt" href="https://youtube.com/@aden1126" target="_blank" rel="noopener" role="button">
+            <img class="icon" aria-hidden="true" src="images/icons/youtube.svg" alt="YouTube Logo">
+            <span data-i18n="btnYoutube">Youtube</span>
+          </a>
+          <a class="button button-nico" href="https://www.nicovideo.jp/user/127196706" target="_blank" rel="noopener" role="button">
+            <img class="icon" aria-hidden="true" src="images/icons/niconico.svg" alt="Niconico Logo">
+            <span data-i18n="btnNico">Niconico</span>
+          </a>
+        </div>
+        
+        <div class="section-group">
+          <p class="button-label" data-i18n="labelContact">Contact</p>
+          <a class="button button-discord" href="https://discord.com/users/389731947892572161" target="_blank" rel="noopener" role="button">
+            <img class="icon" aria-hidden="true" src="images/icons/discord.svg" alt="Discord Logo">
+            <span data-i18n="btnDiscord">Discord</span>
+          </a>
+          <a class="button button-kakaotalk hide-on-en hide-on-jp" href="https://open.kakao.com/o/sJAidqbi" target="_blank" rel="noopener" role="button">
+            <img class="icon" aria-hidden="true" src="images/icons/kakaotalk.svg" alt="Kakaotalk Logo">
+            <span data-i18n="btnKakaotalk">Kakaotalk</span>
+          </a>
+          <a class="button button-email" href="mailto:aden1126@hanmail.net" target="_blank" rel="noopener" role="button">
+            <img class="icon" aria-hidden="true" src="images/icons/email.svg" alt="Email Logo">
+            <span data-i18n="btnEmail">aden1126@hanmail.net</span>
+          </a>
+        </div>
 
       </div>
 
-      <!-- Feel free to add your own footer information, including updating `privacy.html` to reflect how your LittleLink fork is set up -->
       <footer>
-        <a href="privacy.html">Privacy Policy</a> | Build your own by forking <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink</a>
->>>>>>> 6fb6d6eed2efbef9b23193691dca57ce02840f48
+        <span data-i18n="footerPrivacy"><a href="privacy.html">Privacy Policy</a></span>
       </footer>
 
     </div>
   </div>
 
-<<<<<<< HEAD
   <script>
     const translations = {
       en: {
@@ -630,7 +262,7 @@
       },
       jp: {
         pageTitle: "アデン",
-        pageDesc: "“ただ, 完璧なサクサク感を目指して”<br>デザイン＆歌声合成調声愛好家",
+        pageDesc: "“ただ, 完璧なサクサク感を目指して”<br>デザイン＆歌声合成調教愛好家",
         labelAdrelier: "個人サイト（仮）",
         btnAdrelier: "アドレリエ（β）",
         labelPromoSNS: "作品公開用アカウント",
@@ -651,29 +283,27 @@
     };
 
     function changeLanguage(lang) {
+      // Default to 'en' if lang not found
       if (!translations[lang]) lang = 'en';
-      
-      const elements = document.querySelectorAll('[data-i18n]');
-      elements.forEach(el => {
+
+      // Update Text
+      document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) { 
-          el.innerHTML = translations[lang][key]; 
+        if (translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
         }
       });
 
+      // Update Buttons (Active State)
       document.querySelectorAll('.lang-switch button').forEach(btn => {
-        btn.classList.remove('active');
+        btn.classList.toggle('active', btn.id === `btn-${lang}`);
       });
-      
-      const activeBtn = document.getElementById(`btn-${lang}`);
-      if (activeBtn) {
-        activeBtn.classList.add('active');
-      }
 
+      // Update Settings
       document.documentElement.lang = lang;
       localStorage.setItem('preferredLanguage', lang);
     }
-    
+
     function initLanguage() {
       const savedLang = localStorage.getItem('preferredLanguage');
       if (savedLang && translations[savedLang]) {
@@ -682,23 +312,12 @@
       }
 
       const browserLang = navigator.language.slice(0, 2);
-      
-      if (browserLang === 'ko') {
-        changeLanguage('ko');
-      } else if (browserLang === 'ja') {
-        changeLanguage('jp');
-      } else {
-        changeLanguage('en');
-      }
+      if (browserLang === 'ko') changeLanguage('ko');
+      else if (browserLang === 'ja') changeLanguage('jp');
+      else changeLanguage('en');
     }
-    
+
     document.addEventListener('DOMContentLoaded', initLanguage);
   </script>
-
 </body>
 </html>
-=======
-</body>
-
-</html>
->>>>>>> 6fb6d6eed2efbef9b23193691dca57ce02840f48

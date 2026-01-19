@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html class="theme-light" lang="en">
 
 <head>
@@ -12,151 +11,124 @@
     <meta name="description" content="Privacy Policy for Aden1126's LittleLink page">
     <meta name="robots" content="noindex">
 
-=======
-
-<!--
-  To change the theme, change the class on the html tag below to one of:
-  - theme-auto: Automatically switches based on user's system preferences
-  - theme-light: Forces light theme
-  - theme-dark: Forces dark theme
--->
-
-<html class="theme-auto" lang="en"> <!-- Update `class="theme-auto"` with your preference -->
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
-    <title>Privacy Policy | LittleLink</title>
-    <link rel="icon" type="image/x-icon" href="/images/avatar.png"> <!-- Update this with your own favicon -->
-
-
-    <!-- Meta Description - Write a description (150-160 characters recommended) -->
-    <meta name="description" content="Privacy policy and data collection information for LittleLink">
-    <meta name="robots" content="noindex"> <!-- Since this is a utility page -->
-
-    <!-- Stylesheets -->
->>>>>>> 6fb6d6eed2efbef9b23193691dca57ce02840f48
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
 
-<<<<<<< HEAD
+   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+
     <style>
-      :root {
-        --lang-bg: #e0e0e0; 
-        --lang-text: #666;
-        --lang-active-bg: #ffffff;
-        --lang-active-text: #000;
-        --lang-shadow: 0 1px 2px rgba(0,0,0,0.15);
-      }
-
-      @media (prefers-color-scheme: dark) {
-        .theme-auto {
-          --lang-bg: rgba(255, 255, 255, 0.1); 
-          --lang-text: #aaa;
-          --lang-active-bg: #333;
-          --lang-active-text: #fff;
-          --lang-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        /* Variables & Theme */
+        :root {
+            --lang-bg: #e0e0e0;
+            --lang-text: #666;
+            --lang-active-bg: #ffffff;
+            --lang-active-text: #000;
+            --lang-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
         }
-      }
-      .theme-dark {
-        --lang-bg: rgba(255, 255, 255, 0.1);
-        --lang-text: #aaa;
-        --lang-active-bg: #333;
-        --lang-active-text: #fff;
-        --lang-shadow: 0 1px 3px rgba(0,0,0,0.3);
-      }
 
-      .lang-switch-wrapper {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px; 
-        margin-top: 20px;
-      }
+        @media (prefers-color-scheme: dark) {
+            .theme-auto {
+                --lang-bg: rgba(255, 255, 255, 0.1);
+                --lang-text: #aaa;
+                --lang-active-bg: #333;
+                --lang-active-text: #fff;
+                --lang-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            }
+        }
 
-      .lang-switch {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 2px;
-        background: var(--lang-bg);
-        border-radius: 99px;
-        line-height: 1;
-      }
+        /* Language Switcher */
+        .lang-switch-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
 
-      .lang-switch button {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 5px 12px;
-        font-size: 14px;
-        font-weight: 600;
-        color: var(--lang-text);
-        margin: 0; 
-        border-radius: 99px;
-        transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      }
+        .lang-switch {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            background: var(--lang-bg);
+            border-radius: 99px;
+            line-height: 1;
+        }
 
-      .lang-switch button:hover {
-        color: var(--lang-active-text);
-        opacity: 0.8;
-      }
+        .lang-switch button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 5px 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--lang-text);
+            margin: 0;
+            border-radius: 99px;
+            transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
 
-      .lang-switch button.active {
-        background: var(--lang-active-bg);
-        color: var(--lang-active-text);
-        box-shadow: var(--lang-shadow);
-      }
+        .lang-switch button:hover {
+            color: var(--lang-active-text);
+            opacity: 0.8;
+        }
 
-      /* Privacy Page Specific Layout */
-      .privacy-content {
-        text-align: left;
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-        line-height: 1.6;
-      }
-      
-      .privacy-content h2 {
-        margin-top: 30px;
-        margin-bottom: 15px;
-        font-size: 1.25rem;
-        border-bottom: 1px solid rgba(128,128,128,0.2);
-        padding-bottom: 5px;
-      }
+        .lang-switch button.active {
+            background: var(--lang-active-bg);
+            color: var(--lang-active-text);
+            box-shadow: var(--lang-shadow);
+        }
 
-      .privacy-content p {
-        margin-bottom: 15px;
-        font-size: 0.95rem;
-      }
+        /* Privacy Page Specific Layout */
+        .privacy-content {
+            text-align: left;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
 
-      .back-link {
-        display: block;
-        margin-bottom: 20px;
-        text-align: center;
-        opacity: 0.7;
-        text-decoration: none;
-      }
-      
-      .back-link:hover {
-        opacity: 1;
-        text-decoration: underline;
-      }
+        .privacy-content h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+            padding-bottom: 5px;
+        }
+
+        .privacy-content p {
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .back-link {
+            display: block;
+            margin-bottom: 20px;
+            text-align: center;
+            opacity: 0.7;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="column">
-            
+
             <div class="lang-switch-wrapper">
-              <div class="lang-switch" role="group" aria-label="Language switcher">
-                <button onclick="changeLanguage('ko')" id="btn-ko" aria-label="Korean">한국어</button>
-                <button onclick="changeLanguage('jp')" id="btn-jp" aria-label="Japanese">日本語</button>
-                <button onclick="changeLanguage('en')" id="btn-en" aria-label="English">English</button>
-              </div>
+                <div class="lang-switch" role="group" aria-label="Language switcher">
+                    <button onclick="changeLanguage('ko')" id="btn-ko" aria-label="Korean">한국어</button>
+                    <button onclick="changeLanguage('jp')" id="btn-jp" aria-label="Japanese">日本語</button>
+                    <button onclick="changeLanguage('en')" id="btn-en" aria-label="English">English</button>
+                </div>
             </div>
 
             <nav>
@@ -168,7 +140,7 @@
             </h1>
 
             <div class="privacy-content">
-                
+
                 <h2 data-i18n="sec1Title">1. General Overview</h2>
                 <p data-i18n="sec1Desc">
                     This website is a personal link aggregator page managed by Aden1126. We respect your privacy and do not actively collect personal information from visitors.
@@ -176,12 +148,12 @@
 
                 <h2 data-i18n="sec2Title">2. Cookies & Local Storage</h2>
                 <p data-i18n="sec2Desc">
-                    This website does not use tracking cookies. However, we use <strong>Local Storage</strong> solely to save your preferred language setting (Korean, Japanese, or English) for your next visit. This data is stored locally on your device and is not sent to any server.
+                    This website does not use tracking cookies. However, we use Local Storage solely to save your preferred language setting (Korean, Japanese, or English) for your next visit. This data is stored locally on your device and is not sent to any server.
                 </p>
 
                 <h2 data-i18n="sec3Title">3. Hosting</h2>
                 <p data-i18n="sec3Desc">
-                    This website is hosted on <strong>Vercel</strong>. Vercel may collect anonymous server logs (IP address, user agent) for security and reliability purposes. These logs are managed according to Vercel's privacy policy.
+                    This website is hosted on Vercel. Vercel may collect anonymous server logs (IP address, user agent) for security and reliability purposes. These logs are managed according to Vercel's privacy policy.
                 </p>
 
                 <h2 data-i18n="sec4Title">4. External Links</h2>
@@ -207,9 +179,9 @@
                 sec1Title: "1. General Overview",
                 sec1Desc: "This website is a personal link aggregator page managed by Aden1126. We respect your privacy and do not actively collect personal information from visitors.",
                 sec2Title: "2. Cookies & Local Storage",
-                sec2Desc: "This website does not use tracking cookies. However, we use Local Storage solely to save your preferred language setting (Korean, Japanese, or English) for your next visit. This data is stored locally on your device and is not sent to any server.",
+                sec2Desc: "This website does not use tracking cookies. However, we use <strong>Local Storage</strong> solely to save your preferred language setting (Korean, Japanese, or English) for your next visit. This data is stored locally on your device and is not sent to any server.",
                 sec3Title: "3. Hosting",
-                sec3Desc: "This website is hosted on Vercel. Vercel may collect anonymous server logs (IP address, user agent) for security and reliability purposes. These logs are managed according to Vercel's privacy policy.",
+                sec3Desc: "This website is hosted on <strong>Vercel</strong>. Vercel may collect anonymous server logs (IP address, user agent) for security and reliability purposes. These logs are managed according to Vercel's privacy policy.",
                 sec4Title: "4. External Links",
                 sec4Desc: "This website contains links to external platforms (YouTube, X, Discord, etc.). We are not responsible for the content or privacy practices of these external sites. Please review the privacy policies of those services directly.",
                 sec5Title: "5. Contact",
@@ -219,29 +191,29 @@
                 backLink: "← 메인으로 돌아가기",
                 pageTitle: "개인정보 처리방침",
                 sec1Title: "1. 개요",
-                sec1Desc: "이 웹사이트는 아덴이 운영하는 개인 링크 모음 페이지입니다. 운영자는 방문자의 개인정보를 별도로 수집하거나 저장하지 않습니다.",
+                sec1Desc: "이 웹사이트는 Aden1126이 운영하는 개인 링크 모음 페이지입니다. 운영자는 방문자의 개인정보를 별도로 수집하거나 저장하지 않습니다.",
                 sec2Title: "2. 쿠키 및 로컬 스토리지",
-                sec2Desc: "이 사이트는 추적 쿠키를 사용하지 않습니다. 단, 방문자의 언어 설정(한국어, 일본어, 영어)을 유지하기 위해 브라우저의 로컬 스토리지 기능을 사용합니다. 이 정보는 사용자의 기기에만 저장되며 서버로 전송되지 않습니다.",
+                sec2Desc: "이 사이트는 추적 쿠키를 사용하지 않습니다. 단, 방문자의 <strong>언어 설정(한국어, 일본어, 영어)</strong>을 유지하기 위해 브라우저의 <strong>로컬 스토리지</strong> 기능을 사용합니다. 이 정보는 사용자의 기기에만 저장되며 서버로 전송되지 않습니다.",
                 sec3Title: "3. 호스팅",
-                sec3Desc: "이 웹사이트는 Vercel을 통해 호스팅됩니다. Vercel은 보안 및 안정성을 위해 익명화된 접속 로그(IP 주소 등)를 수집할 수 있으며, 이는 Vercel의 개인정보 처리방침에 따릅니다.",
+                sec3Desc: "이 웹사이트는 <strong>Vercel</strong>을 통해 호스팅됩니다. Vercel은 보안 및 안정성을 위해 익명화된 접속 로그(IP 주소 등)를 수집할 수 있으며, 이는 Vercel의 개인정보 처리방침에 따릅니다.",
                 sec4Title: "4. 외부 링크",
                 sec4Desc: "이 페이지에는 외부 플랫폼(YouTube, X, Discord 등)으로 연결되는 링크가 포함되어 있습니다. 운영자는 링크된 외부 사이트의 개인정보 처리 방식에 대해 책임을 지지 않습니다.",
                 sec5Title: "5. 문의하기",
-                sec5Desc: "본 페이지와 관련하여 문의 사항이 있는 경우 아래 이메일로 연락해 주십시오:"
+                sec5Desc: "본 페이지와 관련하여 문의 사항이 있는 경우 아래 이메일로 연락해 주십시오."
             },
             jp: {
                 backLink: "← メインページに戻る",
                 pageTitle: "プライバシーポリシー",
                 sec1Title: "1. 概要",
-                sec1Desc: "当ウェブサイトはアデンが運営する個人のリンク集ページです。運営者は訪問者の個人情報を能動的に収集・保存することはありません。",
+                sec1Desc: "当ウェブサイトはAden1126が運営する個人のリンク集ページです。運営者は訪問者の個人情報を能動的に収集・保存することはありません。",
                 sec2Title: "2. Cookieとローカルストレージ",
-                sec2Desc: "当サイトでは追跡用Cookieを使用していません。ただし、訪問者の言語設定（韓国語、日本語、英語）を保存するために、ブラウザのローカルストレージ機能を使用しています。この情報は利用者の端末内にのみ保存され、サーバーへは送信されません。",
+                sec2Desc: "当サイトでは追跡用Cookieを使用していません。ただし、訪問者の<strong>言語設定（韓国語、日本語、英語）</strong>を保存するために、ブラウザの<strong>ローカルストレージ</strong>機能を使用しています。この情報は利用者の端末内にのみ保存され、サーバーへは送信されません。",
                 sec3Title: "3. ホスティング",
-                sec3Desc: "当ウェブサイトはVercelを利用してホスティングされています。Vercelはセキュリティと安定性のために、匿名化されたアクセスログ（IPアドレスなど）を収集する場合があり、これはVercelのプライバシーポリシーに従います。",
+                sec3Desc: "当ウェブサイトは<strong>Vercel</strong>を利用してホスティングされています。Vercelはセキュリティと安定性のために、匿名化されたアクセスログ（IPアドレスなど）を収集する場合があり、これはVercelのプライバシーポリシーに従います。",
                 sec4Title: "4. 外部リンク",
                 sec4Desc: "当ページには外部プラットフォーム（YouTube, X, Discordなど）へのリンクが含まれています。運営者はリンク先の外部サイトにおける個人情報の取り扱いについては責任を負いません。",
                 sec5Title: "5. お問い合わせ",
-                sec5Desc: "本ページに関するお問い合わせは、以下のメールアドレスまでお願いいたします："
+                sec5Desc: "本ページに関するお問い合わせは、以下のメールアドレスまでお願いいたします。"
             }
         };
 
@@ -256,15 +228,16 @@
                 }
             });
 
+            // Update button styles
             document.querySelectorAll('.lang-switch button').forEach(btn => {
                 btn.classList.remove('active');
             });
-
             const activeBtn = document.getElementById(`btn-${lang}`);
             if (activeBtn) {
                 activeBtn.classList.add('active');
             }
 
+            // Save preference
             document.documentElement.lang = lang;
             localStorage.setItem('preferredLanguage', lang);
         }
@@ -277,7 +250,6 @@
             }
 
             const browserLang = navigator.language.slice(0, 2);
-
             if (browserLang === 'ko') {
                 changeLanguage('ko');
             } else if (browserLang === 'ja') {
@@ -289,63 +261,5 @@
 
         document.addEventListener('DOMContentLoaded', initLanguage);
     </script>
-
 </body>
 </html>
-=======
-  </head>
-
-  <body>
-    <div class="container-left" role="main">
-      <div class="column">
-        <nav role="navigation">
-          <a href="index.html" aria-label="Back to homepage">← Back to main page</a>
-        </nav>
-
-        <h1>Privacy Overview</h1>
-
-        <section aria-labelledby="analytics-heading">
-          <h2 id="analytics-heading">Analytics</h2>
-          <p>The services contained in this section enable the Owner to monitor and analyze web traffic and can be used to keep track of User behavior.</p>
-
-          <h3>Example LLC</h3>
-          <ul role="list">
-            <li>Personal Data: various types of Data as specified in the privacy policy of the service</li>
-            <li><a href="https://example.com/privacy/" target="_blank" rel="noopener">Privacy Policy</a></li>
-          </ul>
-        </section>
-
-        <section aria-labelledby="external-content-heading">
-          <h2 id="external-content-heading">External Content</h2>
-          <p>This type of service allows you to view content hosted on external platforms directly from the pages of this website and interact with them.</p>
-          <p>This type of service might still collect web traffic data for the pages where the service is installed, even when Users do not use it.</p>
-
-          <h3>Example LLC</h3>
-          <ul role="list">
-            <li>Personal Data: Usage Data; various types of Data as specified in the privacy policy of the service</li>
-            <li><a href="https://example.com/privacy/" target="_blank" rel="noopener">Privacy Policy</a></li>
-          </ul>
-        </section>
-
-        <section aria-labelledby="hosting-heading">
-          <h2 id="hosting-heading">Hosting and Infrastructure</h2>
-          <p>This type of service has the purpose of hosting Data and files that enable this website to exist.</p>
-          <p>Some services among those listed below, if any, may work through geographically distributed servers, making it difficult to determine the actual location where the Personal Data are stored.</p>
-
-          <h3>Example LLC</h3>
-          <ul role="list">
-            <li>Personal Data: various types of Data as specified in the privacy policy of the service</li>
-            <li><a href="https://example.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></li>
-          </ul>
-        </section>
-
-        <footer>
-          <p>Build your own by forking <a href="https://littlelink.io" target="_blank" rel="noopener">LittleLink.</a></p>
-        </footer>
-      </div>
-    </div>
-
-  </body>
-
-</html>
->>>>>>> 6fb6d6eed2efbef9b23193691dca57ce02840f48
