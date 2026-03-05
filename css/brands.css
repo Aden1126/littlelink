@@ -19,10 +19,24 @@
 
 /* Brand Specific Styles */
 
-/* Adrelier */
-.button-adrelier {
+/* Global Vocaloid Shop */
+.button-gvs {
   --button-text: #FFFFFF;
   --button-background: #a0774b;
+  --button-border: 1px solid #FFFFFF;
+}
+
+/* Crepe */
+.button-crepe {
+  --button-text: #FFFFFF;
+  --button-background: #692d97;
+  --button-border: 1px solid #FFFFFF;
+}
+
+/* Google Form */
+.button-googleform {
+  --button-text: #FFFFFF;
+  --button-background: #884cf1;
   --button-border: 1px solid #FFFFFF;
 }
 
